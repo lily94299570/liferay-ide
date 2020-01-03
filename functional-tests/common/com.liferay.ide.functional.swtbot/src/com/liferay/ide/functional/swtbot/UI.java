@@ -368,6 +368,8 @@ public interface UI {
 
 	public final String INIT_BUNDLE = "init-bundle";
 
+	public final String INIT_PORTAL_DOCKER_BUNDLE = "Init Portal Docker Bundle";
+
 	public final String INITIALIZE_SERVER_BUNDLE = "Initialize Server Bundle";
 
 	public final String INSTALL_NEW_SOFTWARE = "Install New Software...";

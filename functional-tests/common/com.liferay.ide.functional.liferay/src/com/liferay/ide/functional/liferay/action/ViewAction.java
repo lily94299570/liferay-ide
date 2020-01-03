@@ -434,6 +434,17 @@ public class ViewAction extends UIAction {
 			}
 		}
 
+		public void runInitPortalDockerBundle(String... projectNames) {
+			try {
+				_getProjects().contextMenu(INIT_PORTAL_DOCKER_BUNDLE, projectNames);
+			}
+			catch (Exception e) {
+				ide.sleep(2000);
+
+				_getProjects().contextMenu(INIT_PORTAL_DOCKER_BUNDLE, projectNames);
+			}
+		}
+
 		public void runMavenInitBundle(String... projectNames) {
 			try {
 				_getProjects().contextMenu(INIT_BUNDLE, projectNames);
