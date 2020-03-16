@@ -19,6 +19,7 @@ import com.liferay.ide.functional.liferay.support.server.PureTomcat71Support;
 import com.liferay.ide.functional.liferay.util.RuleUtil;
 
 import org.junit.ClassRule;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.rules.RuleChain;
 
@@ -33,6 +34,7 @@ public class NewFragmentWizardMavenTomcat71Tests extends NewFragmentWizardMavenB
 	@ClassRule
 	public static RuleChain chain = RuleUtil.getTomcat7xRuleChain(bot, tomcat);
 
+	@Ignore("Ignore because of duplicate with deploy test")
 	@Test
 	public void createFragmentWithJsp() {
 		super.createFragmentWithJsp();
