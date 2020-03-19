@@ -37,7 +37,7 @@ public class NewSpringMvcPortletProjectGradleTests extends SwtbotBase {
 
 		wizardAction.finish();
 
-		viewAction.project.closeAndDeleteFromDisk(project.getName());
+		viewAction.project.closeAndDelete(project.getName());
 	}
 
 	@Test
@@ -52,7 +52,7 @@ public class NewSpringMvcPortletProjectGradleTests extends SwtbotBase {
 
 		wizardAction.finish();
 
-		viewAction.project.closeAndDeleteFromDisk(project.getName());
+		viewAction.project.closeAndDelete(project.getName());
 	}
 
 	@Test
@@ -67,7 +67,7 @@ public class NewSpringMvcPortletProjectGradleTests extends SwtbotBase {
 
 		wizardAction.finish();
 
-		viewAction.project.closeAndDeleteFromDisk(project.getName());
+		viewAction.project.closeAndDelete(project.getName());
 	}
 
 	@Test
@@ -82,7 +82,7 @@ public class NewSpringMvcPortletProjectGradleTests extends SwtbotBase {
 
 		wizardAction.finish();
 
-		viewAction.project.closeAndDeleteFromDisk(project.getName());
+		viewAction.project.closeAndDelete(project.getName());
 	}
 
 	@Test
@@ -97,7 +97,7 @@ public class NewSpringMvcPortletProjectGradleTests extends SwtbotBase {
 
 		wizardAction.finish();
 
-		viewAction.project.closeAndDeleteFromDisk(project.getName());
+		viewAction.project.closeAndDelete(project.getName());
 	}
 
 	@Test
@@ -112,7 +112,7 @@ public class NewSpringMvcPortletProjectGradleTests extends SwtbotBase {
 
 		wizardAction.finish();
 
-		viewAction.project.closeAndDeleteFromDisk(project.getName());
+		viewAction.project.closeAndDelete(project.getName());
 	}
 
 	@Rule
