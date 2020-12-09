@@ -17,6 +17,7 @@ package com.liferay.ide.functional.liferay.action;
 import com.liferay.ide.functional.liferay.UIAction;
 import com.liferay.ide.functional.liferay.page.view.LiferayUpgradePlanView;
 import com.liferay.ide.functional.swtbot.eclipse.page.ConsoleView;
+import com.liferay.ide.functional.swtbot.eclipse.page.DeleteResourcesContinueDialog;
 import com.liferay.ide.functional.swtbot.eclipse.page.DeleteResourcesDialog;
 import com.liferay.ide.functional.swtbot.eclipse.page.ErrorLogView;
 import com.liferay.ide.functional.swtbot.eclipse.page.GradleTasksView;
@@ -303,6 +304,12 @@ public class ViewAction extends UIAction {
 
 			_deleteResourcesDialog.confirm();
 
+			try {
+				_deleteResourcesContinueDialog.confirm();
+			}
+			catch (Exception e) {
+			}
+
 			_jobAction.waitForShellClosed(label);
 		}
 
@@ -503,6 +510,8 @@ public class ViewAction extends UIAction {
 			return null;
 		}
 
+		private final DeleteResourcesContinueDialog _deleteResourcesContinueDialog = new DeleteResourcesContinueDialog(
+			bot);
 		private final DeleteResourcesDialog _deleteResourcesDialog = new DeleteResourcesDialog(bot);
 		private final PackageExplorerView _packageExplorerView = new PackageExplorerView(bot);
 		private final ProjectExplorerView _projectExplorerView = new ProjectExplorerView(bot);
